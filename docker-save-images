@@ -1,0 +1,3 @@
+#!/bin/bash
+set -e
+docker save $(docker images --format '{{.Repository}}:{{.Tag}}') -o /var/tmp/allinone.tar
